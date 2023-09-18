@@ -1,0 +1,232 @@
+body {
+    /* height: 9.25in; */
+    width: 21cm;
+    height: 29.7cm;
+    /* margin: 27mm 16mm 27mm 16mm; */
+    /* border: 1px solid black; */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.accented-text {
+    font-weight: 200 !important;
+    color: bisque !important;
+}
+
+/* @@@@@@@@@@@ Header @@@@@@@@@ */
+
+#cv-header {
+    height: 17rem;
+    display: flex;
+}
+
+/* >>>>>>>>>>> Picture <<<<<<<<<<<< */
+#profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 0.5rem;
+    padding-left: 2.25rem;
+    min-width: 35%;
+    height: 100%;
+    background-color: #8b0303;
+}
+
+#profile-picture {
+    height: 12rem;
+    width: 12rem;
+    background-image: url("../resources/profile_pic_square.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+
+/* >>>>>>>>>>> Intro <<<<<<<<<<<< */
+
+.intro-container {
+    margin: 1rem 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.intro-container .name {
+    font-weight: 700;
+}
+
+.intro-container .role {
+    font-weight: 500;
+    letter-spacing: 0.15em;
+}
+
+.intro-container .into-description {
+    margin-top: 1rem;
+    font-size: 12px;
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* @@@@@@@@@@@ Content @@@@@@@@@ */
+/* @@@@@@@@@@@ Info Aside @@@@@@@@@ */
+
+.bio-info-aside {
+    background-color: #8b0303;
+    padding-left: 2.25rem;
+    min-width: 35%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    >div,
+    span {
+        color: white;
+    }
+}
+
+.bio-info-box h3 {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.bio-info-box-sub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    border-top: 2px solid white;
+    padding: 1rem 0;
+
+    font-size: 12px;
+
+    >li {
+        line-height: 1.3;
+    }
+}
+
+.contact-list .label {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.education-list .study-program {
+    font-weight: 900;
+}
+
+.education-list .degree {
+    font-weight: 500;
+}
+
+.expertise-list {
+    font-weight: 900;
+    list-style-type: square;
+    padding-left: 1rem;
+}
+
+/* @@@@@@@@@@@@ Main @@@@@@@@@@@@@*/
+.main-side {
+    margin: 0 1.5rem;
+    color: #767676
+}
+
+.main-side h1,
+.main-side h2,
+.main-side h3,
+.main-side h4 {
+    color: black;
+}
+
+/* >>>>>>>>>>>> Experience <<<<<<<<<<<< */
+
+.experience-section .header {
+    letter-spacing: 0.1em;
+}
+
+.exp-timeline-frame {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 1rem 0;
+}
+
+.exp-timeline-list {
+    border-left: 1px solid #767676;
+
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+}
+
+.exp-timeline-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.exp-timeline-item .item-header {
+    line-height: 1.2;
+}
+
+.exp-timeline-item .date {
+    font-weight: 600;
+    font-size: 0.9em;
+
+    /* Timeline dot */
+    &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: white;
+        border-radius: 999px;
+        top: 0.01rem;
+        left: -1.5rem;
+        border: 3px solid #8b0303;
+    }
+}
+
+
+.exp-timeline-item .company {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.exp-timeline-item .role {
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+
+.exp-timeline-item .role-description,
+.exp-timeline-item .timeline-item-sub-list-container {
+    font-size: 12px;
+    line-height: normal;
+
+    >.timeline-item-sub-list {
+        list-style-type: square;
+        padding-left: 1rem;
+    }
+}
+
+.timeline-item-sub-list-container .label {
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
