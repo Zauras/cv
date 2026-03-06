@@ -21,9 +21,16 @@
         print-color-adjust: exact;
     }
 
+    /* Keep each timeline entry together on one page */
+    .exp-timeline-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
     .new-page {
         page-break-before: always !important;
         break-before: page !important;
-        padding-top: 1rem;
+        margin-top: 2.5rem;
     }
+
 }
